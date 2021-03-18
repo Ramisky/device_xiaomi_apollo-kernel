@@ -14,3 +14,7 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(KERNEL_MODULES_ORIG)/,$(KERNEL_MODULES_DEST))
+
+# DNM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/dtb.img:$(TARGET_COPY_OUT)/dtb.img
